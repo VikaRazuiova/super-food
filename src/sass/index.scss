@@ -1,4 +1,4 @@
-@import './common';
+@import './base/common';
 @import './utils/is-hidden';
 @import './utils/var';
 @import './base/container';
@@ -8,7 +8,7 @@
 @import './components/button';
 @import './components/modal';
 @import './components/navigation';
-@import './components/subscribe';
+@import './layout/subscribe';
 @import './layout/customers-say';
 @import './layout/favorites';
 @import './layout/footer';
