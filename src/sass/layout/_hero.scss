@@ -1,0 +1,58 @@
+.section {
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // flex-direction: column;
+    // flex-wrap: nowrap;
+}
+.hero__title {
+    font-size: 48px;
+line-height: 120%;
+color: #2C2C2C;
+margin-bottom: 20px;
+}
+.hero__text {
+    margin-bottom: 40px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #2C2C2C;
+}
+.button--hero {
+    background: #BBF330;
+border-radius: 30px;
+border-color:transparent;
+padding:6px 18px;
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+
+text-align: right;
+color: #2C2C2C;
+display: inline;
+display: flex;
+
+
+}
+.hero__picture {
+    background: #FEFEFE;
+/* Yellow main */
+
+border: 26px solid #FFE550;
+border-radius: 50%;
+}
+.hero__picture--salat {
+}
+.hero__picture--eggs {
+}
+
+.hero__description{
+max-width: 502px;
+margin-top: 159px;
+}
+
+.hero__slider{
+
+}
