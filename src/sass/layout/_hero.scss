@@ -4,8 +4,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   // flex-direction: column;
   // flex-wrap: nowrap;
+
+  padding-top: 14px;
+
 }
 .hero__title {
   font-size: 48px;
@@ -38,8 +42,11 @@
   background: #fefefe;
   /* Yellow main */
 
+
   border: 26px solid #ffe550;
   border-radius: 50%;
+
+
 }
 .hero__picture--salat {
 }
@@ -49,15 +56,59 @@
 .hero__description {
   max-width: 502px;
   margin-top: 159px;
-}
 
+}
 .hero__slider {
+  height: 200px;
 }
 
 img {
-     width: 528px;
+  width: 528px;
 }
 
+element.style {
+}
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
 .swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 528px;
+
+  border: 26px solid #ffe550;
+  border-radius: 50%;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black, var(--swiper-theme-color);
+  text-decoration: none;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  z-index: 11;
 
 }
