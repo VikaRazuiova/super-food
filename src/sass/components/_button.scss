@@ -1,0 +1,20 @@
+.button{
+    background-color: $button-green;
+    border: none;
+    min-width: 98px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 6px 18px;
+    border-radius: 30px;
+    &__header--tablet{
+       display: none;
+        @include tablet{
+            display: block;
+        }
+    }
+    &--follow{
+        max-width: 103px;
+        padding: 11px 22px;
+    }
+}
