@@ -4,7 +4,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  // flex-direction: column;
+  // flex-wrap: nowrap;
+
   padding-top: 14px;
+
 }
 .hero__title {
   font-size: 48px;
@@ -36,6 +41,12 @@
 .hero__picture {
   background: #fefefe;
   /* Yellow main */
+
+
+  border: 26px solid #ffe550;
+  border-radius: 50%;
+
+
 }
 .hero__picture--salat {
 }
@@ -45,8 +56,8 @@
 .hero__description {
   max-width: 502px;
   margin-top: 159px;
-}
 
+}
 .hero__slider {
   height: 200px;
 }
@@ -99,4 +110,5 @@ element.style {
   left: 10px;
   right: auto;
   z-index: 11;
+
 }
