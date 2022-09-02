@@ -1,0 +1,112 @@
+.logo__img {
+  width: 66px;
+  height: 52px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  background-image: url(../images/footer/bg-1_mob@1x.png),
+    url(../images/footer/bg-2_mob@1x.png), url(../images/footer/bg-3_mob@1x.png);
+  background-repeat: no-repeat;
+  background-position: top 132px left, top right, bottom center;
+  background-size: 110px 116px, 104px 259px, 253px 66px;
+
+  @include retina {
+    background-image: url(../images/footer/bg-1_mob@2x.png),
+      url(../images/footer/bg-2_mob@2x.png),
+      url(../images/footer/bg-3_mob@2x.png);
+  }
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/footer/bg-1_tab@1x.png),
+      url(../images/footer/bg-2_tab@1x.png);
+    background-position: top right, bottom center;
+    background-size: 203px 365px, 785px 141px;
+
+    @include retina {
+      background-image: url(../images/footer/bg-1_tab@2x.png),
+        url(../images/footer/bg-2_tab@2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/footer/bg-1_desk@1x.png);
+    background-position: bottom center;
+    background-size: 1211px 266px;
+
+    @include retina {
+      background-image: url(../images/footer/bg-1_desk@2x.png);
+    }
+  }
+}
+
+.footer__navigation {
+  display: flex;
+  margin-bottom: 40px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.footer__logo {
+  margin-right: 81px;
+
+  @include tablet {
+    margin-right: 129px;
+  }
+
+  @include desktop {
+    margin-right: 148px;
+  }
+}
+
+.footer__bottom {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  @include mobile-only {
+    margin-bottom: 40px;
+  }
+
+  @include tablet {
+    gap: 20px;
+  }
+}
+
+.footer__agreement-link {
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration: underline;
+  color: $dark-green;
+
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.footer__meta {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
