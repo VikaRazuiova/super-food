@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $primary-text-color;
+    background-color: $background-color;
+}
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    @include desktop {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}

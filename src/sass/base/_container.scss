@@ -1,15 +1,21 @@
-<<<<<<< Updated upstream
-=======
+
 .container {
-    max-width: 480px;
+    min-width: 320px;
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
-
-
-  
     }
 
+    @include mobile{
+        width: 480px;
+    }
 
->>>>>>> Stashed changes
+    @include tablet {
+        width: 768px;
+        padding: 0 32px;
+    }
+    @include desktop {
+        width: 1280px;
+    }
+}
