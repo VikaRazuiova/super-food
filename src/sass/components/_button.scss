@@ -1,6 +1,7 @@
 
+
 .button {
-  background: #bbf330;
+  background-color: $button-green;
   border-radius: 30px;
   border-color: transparent;
   padding: 6px 18px;
@@ -17,4 +18,13 @@
        border-color: $dark-green ;
        border: 1px solid;
     }
+     &__header--tablet{
+       display: none;
+        @include tablet{
+            display: block;
+        }
+    }
+    &--follow{
+        max-width: 103px;
+        padding: 11px 22px;
 }

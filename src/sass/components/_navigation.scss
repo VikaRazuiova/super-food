@@ -1,25 +1,36 @@
-.navigation__list {
-  &--footer {
-    @include tablet {
-      display: flex;
-      gap: 28px;
-      align-items: center;
+.navigation{
+    &__list{
+        @include tablet{
+            display: flex;
+            gap: 28px;
+        }
     }
-  }
-}
+    &__item{
+        padding: 15px 0 15px 16px;
+        &:hover,
+        &:focus{
+            background-color: $button-green;
+        }
+        @include tablet{
+            padding: 16px 0;
+        }
 
-.navigation__item {
-  &--footer {
-    &:not(:last-child) {
-      @include mobile-only {
-        margin-bottom: 20px;
-      }
     }
-  }
-}
+    
+    &__link{
+        font-size: 16px;
+        line-height: 1.18;
+        color: $primary-text-color;
+        @include tablet{
+            font-size: 14px;
+            line-height: 1.14;
 
-.navigation__link {
-  line-height: 1.14;
+        }
+        
+    }
+    &__link--active{
+        color: $button-green;
+        text-decoration: underline;
+    }
 
-  color: $dark-text-color;
 }

@@ -1,0 +1,39 @@
+.subscrible{
+    &__container{
+        @include desktop{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    &__img{
+        margin: 0 auto;
+        @include tablet{
+            margin-right: 0;
+            margin-left: auto;
+        }
+      
+    }
+    &__title{
+        margin: 17px 0 0 0;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.2;
+        @include tablet{
+            margin-top: 20px;
+            max-width: 656px;
+            font-size: 42px;
+        }
+    }
+    &__text{
+        margin: 20px 0 40px 0;
+        padding-right: 20px;
+        @include tablet{
+            margin-bottom: 24px;
+            max-width: 656px;
+            font-size: 16px;
+        }
+    }
+
+   
+}
