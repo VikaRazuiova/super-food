@@ -1,0 +1,2 @@
+document.querySelector('[name="phone_number"]').addEventListener("input",(function(t){var e=t.target.value.replace(/\D/g,"").match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})(\d{0,3})/);e[1]?e[2]?t.target.value="+".concat(e[1]," (").concat(e[2])+(e[3]?") ".concat(e[3]):"")+(e[4]?"-".concat(e[4]):"")+(e[5]?"-".concat(e[5]):""):t.target.value="+".concat(e[1]):t.target.value=""}));
+//# sourceMappingURL=index.09119c77.js.map
