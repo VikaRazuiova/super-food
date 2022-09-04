@@ -8,6 +8,7 @@
     padding: 32px 20px;
     background-color: $yellow-main;
     text-align: center;
+    z-index: 2;
     &__button{
         position: absolute;
         top: 16px;
@@ -27,6 +28,9 @@
         line-height: 1.16;
         text-align: center;
         margin-bottom: 20px;
+        .button--modal:hover + &{
+            background-color: blue;
+          }
     }
     &__label{
         font-weight: 500;
@@ -69,7 +73,34 @@
           &:not(:focus):not(:placeholder-shown):invalid {
             border: 1px solid rgba(255, 112, 93, 1);
           }
-          
+        //   &:not(:required):invalid {
+        //     border: 3px solid blue;
+        //   }
+
+
+
+        //   &:not(:focus):invalid {
+        //     border: 2px solid blue;
+        // }
+        // &:not(:focus):invalid + .modal__errorr{
+        //     display: flex;
+        // }
+
+
+
+        // &:not(:required):invalid {
+        //     border: 5px solid blue;
+        // }
+        // &:required:invalid + .button--modal:active{
+        //     border: 5px solid blue;
+        // }
+        // .button--modal:active + &{
+        //     border: 5px solid blue;
+        // }
+        & + .button--modal:active{
+            background-color: blue;
+        }
+         
     }
    
     
@@ -96,6 +127,25 @@
     &__img-error{
         width: 11px;
         height: 11px;
+    }
+    &__errorr{
+        position: absolute;
+        display: flex;
+        align-items: baseline;
+        font-weight: 500;
+        font-size: 111px;
+        line-height: 1.4;
+        color: rgba(255, 112, 93, 1);
+        padding-left: 12px;
+        gap: 4px;
+        display: none;
+    //   .button--modal:active + &{
+    //         display: flex;
+    //     }
+    // .modal__input:not(:focus):not(:placeholder-shown):invalid + & {
+    //     display: flex;
+    //   }
+
     }
 
 }

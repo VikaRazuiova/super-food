@@ -80,6 +80,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
 }
 
 
@@ -113,17 +114,18 @@
   margin-left: auto;
   border: 16px solid #ffe550;
   border-radius: 50%;
+  display: none;
 
-   @include tablet{
-    width: 320px;
-    max-height: 320px;
-    display: flex;
-   }
+  //  @include tablet{
+  //   width: 320px;
+  //   max-height: 320px;
+  //   display: flex;
+  //  }
 
-  @include desktop{
-   max-width:580px;
-   display: flex;
-  }
+  // @include desktop{
+  //  max-width:580px;
+  //  display: flex;
+  // }
 }
 
 
@@ -169,11 +171,5 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
-
-
-.swiper-button-next.swiper-button-disabled, 
-.swiper-button-prev.swiper-button-disabled {
-
-  
+    display: none;
 }

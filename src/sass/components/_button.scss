@@ -17,6 +17,17 @@
        padding: 10px 38px;
        border-color: $dark-green ;
        border: 1px solid;
+        // &:active + .modal__input:not(:required) {
+        //   border: 2px solid red;
+        //   display: flex;
+        // }
+        // &:active + .modal__errorr{
+        //   display: flex;
+        // }
+        // &:hover + .modal__input:not(:focus):invalid {
+        //   border: 5px solid blue;
+        // }
+
     }
      &__header--tablet{
        display: none;
@@ -27,4 +38,11 @@
     &--follow{
         max-width: 103px;
         padding: 11px 22px;
+    }
+}
+.button--modal:visited + .modal__errorr{
+    background-color: #fff;
+    width: 10px;
+    height: 20px;
+    display: flex;
 }
