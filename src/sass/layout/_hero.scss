@@ -1,0 +1,179 @@
+.hero {
+  display: flex;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 21px;
+}
+
+.hero__title {
+  width: 100%;
+  font-size: 28px;
+  line-height: 1.2;
+
+  color: #2c2c2c;
+
+  margin-bottom: 28px;
+
+  @include tablet {
+    font-size: 42px;
+    width: 537px;
+    margin-bottom: 48px;
+  }
+  @include desktop {
+    font-size: 48px;
+    width: 502px;
+    margin-bottom: 44px;
+    margin-top: 159px;
+  }
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  margin-top: 0px;
+  margin-bottom: 28px;
+
+  padding-right: 14px;
+
+  @include tablet{
+    font-size: 16px;
+    max-width: 336px;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    font-size: 16px;
+    margin-bottom: 40px;  
+    max-width: 502px;
+  }
+}
+
+.button--hero {
+  background: #bbf330;
+  border-radius: 30px;
+  border-color: transparent;
+  padding: 6px 18px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  text-align: right;
+  color: #2c2c2c;
+  display: inline;
+  display: flex;
+}
+.hero__picture {
+  background: #fefefe;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero__description {
+
+.hero__border{
+  width: 350px;
+    height: 350px;
+    border: 10px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+}
+.swiper {
+  margin-left: auto;
+  // margin-right: auto;
+
+  // overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+
+  @media screen and (min-width: 480px) {
+    // display: none;
+  }
+}
+
+
+.hero__slider {
+  right: 0;
+  // top:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 14px;
+  margin-right: 0;
+  position: absolute;
+
+  margin-left: auto;
+  border: 16px solid #ffe550;
+  border-radius: 50%;
+
+   @include tablet{
+    width: 320px;
+    max-height: 320px;
+    display: flex;
+   }
+
+  @include desktop{
+   max-width:580px;
+   display: flex;
+  }
+}
+
+
+
+
+
+.swiper-button-next {
+  position: absolute;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  z-index: 20 !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  position: absolute;
+  content: url('../images/svg/arrow-right-desk.svg');
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: url('../images/svg/arrow-left-desk.svg');
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  position: relative;
+}
+
+
+.hero__border{
+  width: 350px;
+    height: 350px;
+    border: 10px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled {
+
+  
+}
