@@ -1,7 +1,19 @@
-.button{
+
+.button {
+  background: #bbf330;
+  border-radius: 30px;
+  border-color: transparent;
+  padding: 6px 18px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  text-align: right;
+  color: #2c2c2c;
+  display: inline;
+  display: flex;
     &--modal{
        padding: 10px 38px;
-       border-radius: 30px;
        border-color: $dark-green ;
        border: 1px solid;
     }

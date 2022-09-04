@@ -1,0 +1,278 @@
+.offerings {
+    padding-top: 40px;
+    background-image: url(../images/mobile/offers/bg-offers-480-1-min.png);
+
+    @include retina {
+        background-image: url(../images/mobile/offers/bg-offers-480-2-min.png);
+    }
+
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    line-height: 1.2;
+
+    @include tablet {
+        padding-top: 21px;
+        background-image: url(../images/tablet/offers/bg-offers-tablet-1-min.png);
+
+        @include retina {
+            background-image: url(../images/tablet/offers/bg-offers-tablet-2-min.png);
+        }
+    }
+
+    @include desktop {
+        padding-top: 177px;
+        background-image: url(../images/desktop/offers/bg-offers-desktop-1-min.png);
+
+        @include retina {
+            background-image: url(../images/desktop/offers/bg-offers-desktop-2-min.png);
+        }
+    }
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    & .title {
+        margin-bottom: 28px;
+
+        @include tablet {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.apple {
+    position: relative;
+    width: 280px;
+    height: 309px;
+    margin: 0 auto 60px;
+
+    @include tablet {
+        width: 357px;
+        height: 394px;
+        margin: 0 29px 60px 0;
+    }
+
+    @include desktop {
+        width: 550px;
+        height: 604px;
+        margin: 0 90px 0 0;
+    }
+
+    &-bg {
+        position: absolute;
+        bottom: 0;
+        width: 280px;
+        height: 280px;
+        background-color: $heder-color;
+
+        border: 9px solid $yellow-main;
+        border-radius: 50%;
+        outline: 3px solid rgba(255, 255, 255, 0.5);
+
+        @include tablet {
+            width: 357px;
+            height: 357px;
+        }
+
+        @include desktop {
+            width: 550px;
+            height: 550px;
+            border: 19px solid $yellow-main;
+            outline: 5px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    & img {
+        position: absolute;
+        top: -3px;
+        left: 42px;
+        z-index: 1;
+
+        margin: 0 auto;
+        width: 202px;
+        height: 256px;
+
+        @include tablet {
+            top: -6px;
+            left: 54px;
+            width: 257px;
+            height: 326px;
+        }
+
+        @include desktop {
+            top: -5px;
+            left: 85px;
+            width: 396px;
+            height: 502px;
+        }
+    }
+
+    &-gradient {
+        position: absolute;
+        left: 79px;
+        bottom: 39px;
+        width: 128px;
+        height: 44px;
+        background-image: radial-gradient(50% 50% at 50% 50%,
+                #2f583f 0%,
+                rgba(105, 105, 105, 0) 100%);
+
+        @include tablet {
+            left: 101px;
+            bottom: 54px;
+            width: 164px;
+            height: 56px;
+        }
+
+        @include desktop {
+            left: 155px;
+            bottom: 85px;
+            width: 252px;
+            height: 87px;
+        }
+    }
+}
+
+.title-box {
+    width: 100%;
+    margin-bottom: 28px;
+
+    @include tablet {
+        width: 526px;
+        margin-bottom: 40px;
+    }
+}
+
+.offerings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 28px;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 116px;
+        margin-bottom: 40px;
+    }
+
+    @include desktop {
+        gap: 67px;
+        margin-bottom: 32px;
+    }
+}
+
+.offerings-item {
+    &.delivery::before {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        margin-bottom: 8px;
+        background-color: #ffffff;
+        background-image: url(../images/svg/rocket.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+
+    &.order::before {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        margin-bottom: 8px;
+        background-color: #ffffff;
+        background-image: url(../images/svg/touch.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+
+    &__title {
+        margin: 0 0 16px;
+        font-size: 18px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}
+
+.buttons-set {
+    display: flex;
+    gap: 24px;
+
+    & .button-order {
+        text-align: center;
+        width: 106px;
+        height: 40px;
+
+        background-color: #ffffff;
+        color: $primary-text-color;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        border: 2px solid $dark-green;
+        border-radius: 30px;
+
+        &:active {
+            border-color: rgba(89, 125, 0, 1);
+        }
+
+        @include desktop {
+            &:hover {
+                border-color: rgba(89, 125, 0, 1);
+            }
+        }
+    }
+
+    & .button-read {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3px;
+        padding: 5px 0 0;
+        width: 83px;
+        height: 34px;
+        background-color: inherit;
+        color: #000000;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: 1.5;
+        border: none;
+
+        &__icon {
+            align-items: flex-end;
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.apple-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.apple-box {
+    display: none;
+
+    @include tablet {
+        display: flex;
+        align-items: flex-end;
+        gap: 44px;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}

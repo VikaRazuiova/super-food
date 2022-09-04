@@ -1,0 +1,35 @@
+.customers{
+    background-color: $background-color;
+    background-image: url(../images/320/customers/bg_mob.png);
+}
+
+.coustumers__box{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    padding: 8px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+
+}
+
+
+.customers__name{
+    display: block;
+    margin-left: 16px;
+
+}
+
+.stars{
+    margin-bottom: 28px;
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
