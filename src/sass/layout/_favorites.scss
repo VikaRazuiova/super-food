@@ -1,0 +1,91 @@
+.favorites {
+    & .title {
+        text-align: center;
+    }
+
+    & .after-title {
+        text-align: center;
+        margin: 0 0 60px;
+
+        @include desktop {
+            margin: 0 0 40px;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 280px;
+            height: 282px;
+            border: 11px solid $yellow-main;
+            border-radius: 50%;
+            transition-property: transform;
+
+            &:active {
+                border-color: $button-green;
+                transform: scale(1.1);
+            }
+
+            @include desktop {
+                &:hover {
+                    border-color: $button-green;
+                    transform: scale(1.1);
+                }
+            }
+
+            @include tablet {
+                width: 336px;
+                height: 338px;
+                border: 14px solid $yellow-main;
+            }
+
+            @include desktop {
+                width: 395px;
+                height: 397px;
+                border: 16px solid $yellow-main;
+            }
+
+            //   -----change?-----
+            &:nth-child(2),
+            &:nth-child(5) {
+                width: 280px;
+                height: 282px;
+
+                @include tablet {
+                    width: 336px;
+                    height: 338px;
+                }
+
+                @include desktop {
+                    width: 394px;
+                    height: 397px;
+                }
+            }
+
+            &:nth-child(n + 4) {
+                display: none;
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
