@@ -1,0 +1,63 @@
+<button data-modal-open> qwewqee </button>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__button" type="button" data-modal-close>
+            <svg width="20px" height="20px">
+                <use href="#">
+                    </use>
+                </svg>
+            </button>
+       
+        <p class="modal__title">Order From</p>
+        <form class="modal__form">
+            <label class="modal__label" for="name">Name</label>
+                <div class="modal__position">
+                    <input type="text" class="modal__input" 
+                        name="name" 
+                        title="Valentyn Strykalo"
+                        id="name" 
+                        required
+                        placeholder="Your name"
+                        minlength="3"
+                        maxlength="25">
+                <div class="modal__error">
+                    <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
+                    <p class="modal__error-text">The name must be between 3 and 25 characters</p>
+                </div>  
+                </div>  
+            <label class="modal__label" for="phone">Phone number</label> 
+                <div class="modal__position">
+                    <input type="tel" class="modal__input phone"
+                    name="phone_number"
+                    title="+38 (063) 000 00 00" 
+                    id="phone" 
+                    required
+                    placeholder="+00 (000) 000-00-00"
+                    pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}\d{2}\d{2}"
+                    minlength="19">
+                    <div class="modal__error">
+                        <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
+                        <p class="modal__error-text">This phone must be in the format  099 000 00 00</p>
+                    </div>
+                </div>
+            <label class="modal__label" for="email">E-mail</label>
+            <div class="modal__position">
+                <input type="email" class="modal__input" 
+                name="email"
+                title="example@gmail.com" 
+                id="email" 
+                required
+                placeholder="example@gmail.com">
+                <div class="modal__error">
+                    <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
+                    <p class="modal__error-text">Please enter a valid email address</p>
+                </div>
+            </div>
+            <button class="button button--modal" type="submit">Send</button>
+               
+        </form>
+        
+    </div>
+</div>
+
+</script>
