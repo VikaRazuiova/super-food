@@ -28,7 +28,6 @@ a {
 }
 
 img {
-
   display: block;
   max-width: 100%;
   height: auto;
@@ -36,11 +35,6 @@ img {
 
 button {
   cursor: pointer;
-
-    display: block;
-    max-width: 100%;
-    height: auto;
-
 }
 
 .section {
@@ -49,9 +43,9 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @include desktop {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -63,6 +57,7 @@ button {
 
   @include tablet {
     font-size: 42px;
+    
   }
 }
 
