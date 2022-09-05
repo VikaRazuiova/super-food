@@ -1,30 +1,28 @@
 
-
 .button {
   background-color: $button-green;
   border-radius: 30px;
-  border-color: transparent;
+  border: none;
   padding: 6px 18px;
   font-weight: 500;
   font-size: 13px;
-  line-height: 150%;
+  line-height: 1.5;
 
-  text-align: right;
+  text-align: center;
   color: #2c2c2c;
   display: inline;
-  display: flex;
     &--accent{
         transition: 250ms background-color cubic-bezier(0.075, 0.82, 0.165, 1);
        &:hover{
         background-color: $accent-button-green;
        }
     }
+
     &--modal{
-        background-color: #fff;
-        margin: 0 auto;
+       margin: 0 auto;
+       background-color: #ffffff;
        padding: 10px 38px;
        border-color: 1px solid $dark-green;
-      
     }
      &__header--tablet{
        display: none;
@@ -45,6 +43,7 @@
 
     }
     &--subscrible{
+    display: flex;
         background-color: $button-green;
         justify-content: center;
         align-items: center;

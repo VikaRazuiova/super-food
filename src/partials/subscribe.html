@@ -1,5 +1,4 @@
 <section class="subscrible section">
-
   <div class="container subscrible__container">
     <div>
       <picture>
@@ -22,14 +21,12 @@
             ./images/mobile/subscrible/banana-mobile-1-min.png 1x,
             ./images/mobile/subscrible/banana-mobile-2-min.png 2x
           "
-          media="(max-width:420px)"
+          media="(min-width:480px)"
         />
         <img
           class="subscrible__img"
           src="./images/mobile/subscrible/banana-mobile-1-min.png"
           alt="banan"
-          width="608"
-          height="266"
         />
       </picture>
     </div>
@@ -49,10 +46,9 @@
               type="email"
               name="email"
               placeholder="Enter your email"
-              minlength=""
+              minlength="5"
               required
             />
-
             <span class="form-subscribe__warning">
               <svg class="form-subscribe__warning-icon" width="12" height="12">
                 <use href="images/svg/icons.svg#icon-warning"></use>
@@ -60,7 +56,6 @@
               Not a valid email address (example@email.com)</span
             >
           </label>
-
           <button
             class="button button--subscrible"
             type="submit"

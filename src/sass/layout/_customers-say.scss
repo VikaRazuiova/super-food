@@ -1,6 +1,11 @@
 .customers{
-
     max-width: 100%;
+    @include tablet{
+        padding-top: 60px;
+    }
+    @include desktop{
+        padding-top: 100px;
+    }
 }
 
 .customers .after-title{
@@ -51,8 +56,8 @@
     display: block;
     margin-left: 16px;
     padding-right: 18px;
+    line-height: 1.5;
     border-right: 0.854167px solid #7EB101;
-
 }
 
 .customers__name{
