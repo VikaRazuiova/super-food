@@ -31,9 +31,15 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        &:valid{
+            .button--modal{
+                border: 2px solid $dark-green;
+                background-color: rgba(187, 243, 48, 1) ;
+                } 
+        }
         &:invalid{
             .button--modal{
-            border: 2px solid red;
+            border: 2px solid rgba(255, 112, 93, 1);
             background-color: #ffff;
             }
             .modal__input{
@@ -42,8 +48,13 @@
             .modal__errorr{
                 display: flex;
             }
+        & .modal__input:focus{
+            .modal__errorr{
+                display: none;
+            }
+        }
         
-           
+        
             
 
         }
@@ -84,7 +95,8 @@
       
         border: 1px solid rgba(18, 18, 18, 0.12);
         box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-        
+
+       
         &::placeholder{
             font-weight: 400;
             font-size: 16px;
@@ -94,6 +106,7 @@
         &:focus {
             border-color:$dark-green;
             outline: none;
+            
           }
         &:not(:focus):not(:placeholder-shown):valid {
             border-color: $dark-green;

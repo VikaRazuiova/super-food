@@ -12,14 +12,22 @@
   color: #2c2c2c;
   display: inline;
     &--modal{
+<<<<<<< HEAD
        margin: 0 auto;
+=======
+        background-color: #fff;
+        margin: 0 auto;
+>>>>>>> 7a851c4b452bfd875a337f38871933a88610da32
        padding: 10px 38px;
        border-color: 1px solid $dark-green;
     }
      &__header--tablet{
        display: none;
+       min-width: 102px;
+       flex-direction: row;
         @include tablet{
             display: block;
+            
         }
     }
     &--follow{
@@ -28,5 +36,4 @@
 
     }
 }
-
 

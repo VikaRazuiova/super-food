@@ -16,7 +16,7 @@
 }
 .is-hiddenn {
     transform: translateY(-120%);
-    transition: 2s;
+    transition: transform 1000ms;
 }
 .backdrop{
     position: fixed;
@@ -25,11 +25,6 @@
     top: 0;
     left: 0%;
     background-color:rgba(0, 0, 0, 0.2);
-    animation-name: rotator;
-    animation-duration: 250ms;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
   }
   .is-hidden{
     opacity: 0;
