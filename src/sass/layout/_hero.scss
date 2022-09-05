@@ -62,6 +62,11 @@
   border-radius: 50%;
   border: 14px solid $yellow-main;
 
+  &:hover,
+  &:focus {
+    border: 14px solid $button-green;
+  }
+
   @include desktop {
     width: 580px;
     height: 580px;
@@ -69,6 +74,10 @@
     top: 0;
     right: 0;
     border: 26px solid $yellow-main;
+    &:hover,
+    &:focus {
+      border: 26px solid $button-green;
+    }
   }
 }
 

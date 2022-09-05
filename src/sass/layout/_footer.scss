@@ -66,14 +66,43 @@
 
 .footer__logo {
   margin-right: 81px;
+  transition: transform 300ms ease;
 
   @include tablet {
     margin-right: 129px;
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
   }
 
   @include desktop {
     margin-right: 148px;
   }
+}
+
+.navigation__list--footer {
+  @include tablet {
+    width: 320px;
+  }
+
+  @include desktop {
+    width: 320px;
+  }
+}
+
+.navigation__item--footer {
+  transition: background-color 300ms ease;
+}
+
+.navigation__item--footer:hover,
+.navigation__item--footer:focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: $yellow-main;
+  border-radius: 25px;
 }
 
 .footer__subscribe {
