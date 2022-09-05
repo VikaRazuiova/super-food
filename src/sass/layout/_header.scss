@@ -27,6 +27,9 @@
         max-width: 28px;
         max-height: 28px;
         fill: $dark-green;
+        &:active{
+            fill: rgb(255, 229, 80);
+        }
         @include tablet{
             display: none;
             
