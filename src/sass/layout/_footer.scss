@@ -193,7 +193,10 @@
   display: block;
   width: 100%;
   min-width: 280px;
-  max-width: 394px;
+  max-width: 440px;
+  @include tablet{
+    max-width: 394px;
+  }
 }
 
 .form-subscribe__input {
