@@ -1,8 +1,10 @@
 .hero {
   display: flex;
   position: relative;
-  padding-top: 60px;
   padding-bottom: 21px;
+  @include desktop {
+    padding-top: 159px;
+  }
 }
 
 .hero__title {
@@ -23,7 +25,6 @@
     font-size: 48px;
     width: 502px;
     margin-bottom: 44px;
-    margin-top: 159px;
   }
 }
 
@@ -37,7 +38,7 @@
 
   padding-right: 14px;
 
-  @include tablet{
+  @include tablet {
     font-size: 16px;
     max-width: 336px;
     padding-right: 0;
@@ -45,7 +46,7 @@
   }
   @include desktop {
     font-size: 16px;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
     max-width: 502px;
   }
 }
@@ -65,89 +66,103 @@
   display: flex;
 }
 .hero__picture {
-  background: #fefefe;
-  min-width: 100%;
-  min-height: 100%;
+  width: 292px;
+  height: 292px;
+  @include desktop {
+    width: 528px;
+    height: 528px;
+  }
 }
 
-.hero__description {
 
-.hero__border{
+.hero__border {
   width: 350px;
-    height: 350px;
-    border: 10px solid red;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  height: 350px;
+
+  position: relative;
 }
 
-
-}
 .swiper {
   margin-left: auto;
-  // margin-right: auto;
 
-  // overflow: hidden;
+
+  overflow: hidden;
   list-style: none;
   padding: 0;
   z-index: 1;
 
   @media screen and (min-width: 480px) {
-    // display: none;
   }
 }
-
 
 .hero__slider {
+  display: none;
+  right: 32px;
+  height: 336px;
+  width: 336px;
+  top: 89px;
   right: 0;
-  // top:50%;
-  display: flex;
+
+
   justify-content: center;
   align-items: center;
-
-  margin-top: 14px;
   margin-right: 0;
   position: absolute;
-
+  outline: 2px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
   margin-left: auto;
-  border: 16px solid #ffe550;
+  box-shadow: inset 0 0 0 8px #f5f5f5, inset 0 0 0 22px #ffe550;
   border-radius: 50%;
 
-   @include tablet{
-    width: 320px;
-    max-height: 320px;
+  @include tablet {
     display: flex;
-   }
+  }
 
-  @include desktop{
-   max-width:580px;
-   display: flex;
+  @include desktop {
+    width: 608px;
+    height: 608px;
+    top: -83px;
+    display: flex;
+    box-shadow: inset 0 0 0 14px #f5f5f5, inset 0 0 0 40px #ffe550;
+    outline: 2px solid #f5f5f5;
+    border: 2px solid #f5f5f5;
   }
 }
 
 
-
-
-
-.swiper-button-next {
-  position: absolute;
-}
-
-.swiper-button-prev {
-  position: absolute;
-  z-index: 20 !important;
-}
-
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.swiper-button-next
+{
+      right: -2px;
+    top: 50%;
+    left: auto;
+    transform: translateY(50%);
   position: absolute;
   content: url('../images/svg/arrow-right-desk.svg');
+  height: 28px;
+  width: 34px;
+
+  @include desktop{
+     transform: translateY(0);
+      height: 40px;
+  width: 48px;
+  }
 }
 
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-button-prev
+ {
+  left: -2px;
+    top: 50%;
+    right: auto;
+    transform: translateY(50%);
+  position: absolute;
   content: url('../images/svg/arrow-left-desk.svg');
+    height: 28px;
+  width: 34px;
+    @include desktop{
+       transform: translateY(0);
+      height: 40px;
+  width: 48px;
+  }
 }
 
 .swiper-slide {
@@ -156,24 +171,8 @@
   align-items: center;
 }
 
-.swiper-wrapper {
-  position: relative;
-}
 
 
-.hero__border{
-  width: 350px;
-    height: 350px;
-    border: 10px solid red;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 
-.swiper-button-next.swiper-button-disabled, 
-.swiper-button-prev.swiper-button-disabled {
 
-  
-}
