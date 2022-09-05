@@ -29,6 +29,7 @@
         fill: $dark-green;
         &:active{
             fill: rgb(255, 229, 80);
+            
         }
         @include tablet{
             display: none;
@@ -56,12 +57,13 @@
         top: 50px;
         right: 20px;
         background-color: $background-color;
-        transform: translateY(-120%);
+        // transform: translateY(-120%);
         min-width: 130;
         max-height: 255;
         border-radius: 30px 0 30px 30px;
         box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
         transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        z-index: 1;
         @include tablet {
             position: static;
             background-color: transparent;
@@ -72,6 +74,8 @@
         }
     
     }
+
+
 }
 .is-add{
     transform: translateY(0%);
