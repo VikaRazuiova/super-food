@@ -1,37 +1,73 @@
 <section class="subscrible section">
-    <div class="container subscrible__container">
-        <div> 
-            <picture>
-                <source
-                    srcset="
-                    ./images/desktop/subscrible/banana-desktop-1-min.png 1x,
-                    ./images/desktop/subscrible/banana-desktop-2-min.png 2x"
-                    media="(min-width:1280px)">
-                <source
-                    srcset="
-                    ./images/tablet/subscrible/banana-tablet-1-min.png 1x,
-                    ./images/tablet/subscrible/banana-tablet-2-min.png 2x"
-                    media="(min-width:768px)">
-                <source
-                    srcset="
-                    ./images/mobile/subscrible/banana-mobile-1-min.png 1x,
-                    ./images/mobile/subscrible/banana-mobile-2-min.png 2x"
-                    media="(max-width:420px)">
-                <img class="subscrible__img" 
-                    src="./images/mobile/subscrible/banana-mobile-1-min.png" 
-                    alt="banan" 
-                    width="161" 
-                    height="78">
-            </picture>
-        </div>
-        <div>
-            <h2 class="subscrible__title">Subscribe To Get Special Offers</h2>
-        <p class="subscrible__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim 
-            in eros elementum tristique.</p>
-            <div class="follow">
-                <input class="follow__input" type="email" placeholder="Enter your email">
-                <button class="button button--follow" type="submit">Subscrible</button>
-            </div>
-        </div>
+  <div class="container subscrible__container">
+    <div>
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/subscrible/banana-desktop-1-min.png 1x,
+            ./images/desktop/subscrible/banana-desktop-2-min.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/subscrible/banana-tablet-1-min.png 1x,
+            ./images/tablet/subscrible/banana-tablet-2-min.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/subscrible/banana-mobile-1-min.png 1x,
+            ./images/mobile/subscrible/banana-mobile-2-min.png 2x
+          "
+          media="(max-width:420px)"
+        />
+        <img
+          class="subscrible__img"
+          src="./images/mobile/subscrible/banana-mobile-1-min.png"
+          alt="banan"
+          width="608"
+          height="266"
+        />
+      </picture>
     </div>
+
+    <div>
+      <h2 class="subscrible__title">Subscribe To Get Special Offers</h2>
+      <p class="subscrible__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+
+      <div class="wrapper-subscribe">
+        <form class="form-subscribe" name="subscribe-form">
+          <label class="form-subscribe__label">
+            <input
+              class="form-subscribe__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              minlength=""
+              required
+            />
+
+            <span class="form-subscribe__warning">
+              <svg class="form-subscribe__warning-icon" width="12" height="12">
+                <use href="images/svg/icons.svg#icon-warning"></use>
+              </svg>
+              Not a valid email address (example@email.com)</span
+            >
+          </label>
+
+          <button
+            class="form-subscribe__button form-subscribe__button--accent"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
