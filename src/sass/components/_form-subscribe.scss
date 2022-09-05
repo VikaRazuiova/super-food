@@ -1,0 +1,79 @@
+.form-subscribe__label {
+  display: block;
+  width: 100%;
+  min-width: 280px;
+  max-width: 394px;
+}
+
+.form-subscribe__input {
+  width: 100%;
+  height: 42px;
+  padding: 12px;
+  border: 1px solid $yellow-main;
+  border-radius: 30px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border 300ms ease;
+
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid $warning-text-color;
+  }
+
+  &:not(:placeholder-shown):required:valid {
+    border: 1px solid $dark-green;
+  }
+}
+
+.form-subscribe__warning {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: $warning-text-color;
+  opacity: 0;
+  transition: opacity 300ms ease;
+
+  .form-subscribe__input:not(:placeholder-shown):required:invalid + & {
+    opacity: 1;
+  }
+}
+
+.form-subscribe__warning-icon {
+  fill: none;
+  stroke: $warning-text-color;
+}
+
+.form-subscribe__button {
+  min-width: 103px;
+  height: 42px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $primary-text-color;
+  background: $background-btn;
+  border: 1px solid $dark-green;
+  border-radius: 30px;
+  transition: background-color 300ms ease;
+  @include tablet {
+    margin-left: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $yellow-main;
+  }
+  &--accent {
+    background-color: $button-green;
+    border-color: transparent;
+
+    @include tablet {
+      margin-left: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $accent-button-green;
+    }
+  }
+}
