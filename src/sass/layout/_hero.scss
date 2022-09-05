@@ -1,11 +1,18 @@
+
+.hero-wrap {
+  padding-bottom: 46px;
+
+}
+
 .hero {
   display: flex;
   position: relative;
-  padding-bottom: 21px;
+  
   @include desktop {
     padding-top: 159px;
   }
 }
+
 
 .hero__title {
   width: 100%;
