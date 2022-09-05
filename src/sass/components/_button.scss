@@ -14,9 +14,10 @@
   display: inline;
   display: flex;
     &--modal{
+        margin: 0 auto;
        padding: 10px 38px;
-       border-color: $dark-green ;
-       border: 1px solid;
+       border-color: 1px solid $dark-green;
+      
     }
      &__header--tablet{
        display: none;
@@ -27,5 +28,11 @@
     &--follow{
         max-width: 103px;
         padding: 11px 22px;
+
+    }
 }
+
+
+
 }
+
