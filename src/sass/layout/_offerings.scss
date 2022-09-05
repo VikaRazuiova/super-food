@@ -1,34 +1,34 @@
 
 .offerings {
-    padding-top: 40px;
-    background-image: url(../images/mobile/offers/bg-offers-480-1-min.png);
+    padding-top: 46px;
+    // background-image: url(../images/mobile/offers/bg-offers-480-1-min.png);
 
-    @include retina {
-        background-image: url(../images/mobile/offers/bg-offers-480-2-min.png);
-    }
+    // @include retina {
+    //     background-image: url(../images/mobile/offers/bg-offers-480-2-min.png);
+    // }
 
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    line-height: 1.2;
+    // background-size: cover;
+    // background-position: top;
+    // background-repeat: no-repeat;
+    // line-height: 1.2;
 
-    @include tablet {
-        padding-top: 21px;
-        background-image: url(../images/tablet/offers/bg-offers-tablet-1-min.png);
+    // @include tablet {
+    //     padding-top: 21px;
+    //     background-image: url(../images/tablet/offers/bg-offers-tablet-1-min.png);
 
-        @include retina {
-            background-image: url(../images/tablet/offers/bg-offers-tablet-2-min.png);
-        }
-    }
+    //     @include retina {
+    //         background-image: url(../images/tablet/offers/bg-offers-tablet-2-min.png);
+    //     }
+    // }
 
-    @include desktop {
-        padding-top: 177px;
-        background-image: url(../images/desktop/offers/bg-offers-desktop-1-min.png);
+    // @include desktop {
+    //     padding-top: 177px;
+    //     background-image: url(../images/desktop/offers/bg-offers-desktop-1-min.png);
 
-        @include retina {
-            background-image: url(../images/desktop/offers/bg-offers-desktop-2-min.png);
-        }
-    }
+    //     @include retina {
+    //         background-image: url(../images/desktop/offers/bg-offers-desktop-2-min.png);
+    //     }
+
 
     & .container {
         display: flex;
@@ -46,6 +46,13 @@
         @include tablet {
             margin-bottom: 20px;
         }
+    }
+}
+
+.text-wrap{
+    line-height: 1.17;
+    @include mobile{
+        line-height: 1.5;
     }
 }
 
@@ -157,6 +164,9 @@
     flex-direction: column;
     gap: 28px;
     margin-bottom: 28px;
+    // @include mobile{
+    //     font-size: 15px;
+    // }
 
     @include tablet {
         flex-direction: row;

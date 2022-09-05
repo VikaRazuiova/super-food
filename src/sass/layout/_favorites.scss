@@ -1,3 +1,4 @@
+
 .favorites {
     & .title {
         text-align: center;
@@ -33,17 +34,17 @@
             height: 282px;
             border: 11px solid $yellow-main;
             border-radius: 50%;
-            transition-property: transform;
+            transition: border-color 100ms linear,
+            transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             &:active {
                 border-color: $button-green;
-                transform: scale(1.1);
-            }
+                transform: scale(1.15);
 
-            @include desktop {
-                &:hover {
-                    border-color: $button-green;
-                    transform: scale(1.1);
+                & img {
+                    animation-name: changeItemPosition;
+                    animation-duration: 500ms;
+                    animation-delay: 250ms;
                 }
             }
 
@@ -57,6 +58,17 @@
                 width: 395px;
                 height: 397px;
                 border: 16px solid $yellow-main;
+
+                &:hover {
+                    border-color: $button-green;
+                    transform: scale(1.15);
+
+                    & img {
+                        animation-name: changeItemPosition;
+                        animation-duration: 500ms;
+                        animation-delay: 250ms;
+                    }
+                }
             }
 
             //   -----change?-----

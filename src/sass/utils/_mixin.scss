@@ -35,3 +35,49 @@
     @content;
   }
 }
+
+@keyframes changeItemPosition {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  60% {
+    transform: rotate(-15deg);
+  }
+
+  70% {
+    transform: rotate(15deg);
+  }
+
+  80% {
+    transform: rotate(-15deg);
+  }
+
+  90% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}

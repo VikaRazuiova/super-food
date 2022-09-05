@@ -3,6 +3,7 @@
 
 @import './utils/is-hidden';
 @import './utils/var';
+@import './utils/wrap';
 
 @import './base/container';
 @import './base/reset';
@@ -11,11 +12,8 @@
 @import './components/button';
 @import './components/modal';
 @import './components/navigation';
-@import './components/follow';
+@import './components/form-subscribe';
 
-@import './layout/customers-say';
-@import './layout/favorites';
-@import './layout/footer';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/offerings';
@@ -23,3 +21,4 @@
 @import './layout/customers-say';
 @import './layout/subscribe';
 @import './layout/footer';
+

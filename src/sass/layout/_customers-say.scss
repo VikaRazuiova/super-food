@@ -1,6 +1,32 @@
 .customers{
-    background-color: $background-color;
-    // background-image: url(../images/320/customers/bg_mob.png);
+
+    max-width: 100%;
+}
+
+.customers .after-title{
+    margin-bottom: 32px;
+}
+.coustumers__boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    @include tablet {
+        flex-direction: row;
+    }
+    @include desktop{
+        gap: 139px;
+    }
+}
+
+.customers__coment{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    @include tablet{
+        font-size: 18px;
+        line-height: 1.16;
+    }     
 }
 
 .coustumers__box{
@@ -12,23 +38,35 @@
     border-bottom-right-radius: 28px;
     border-bottom-left-radius: 28px;
     padding: 8px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-
+    @include tablet{
+        width: 336px;
+        padding: 12px;
+    }
+    @include desktop{
+        width: 501px;
+        padding: 14px;
+    }        
 }
-
-
-.customers__name{
+.customers__contact{
     display: block;
     margin-left: 16px;
+    padding-right: 18px;
+    border-right: 0.854167px solid #7EB101;
 
 }
 
-.stars{
+.customers__name{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.customers__stars{
     margin-bottom: 28px;
 }
 
-.client{
+.coustumers__profile{
+    max-width: 160px;
+    height: 52px;
     display: flex;
     align-items: center;
     margin-top: 40px;

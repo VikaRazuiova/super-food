@@ -1,58 +1,100 @@
-<section>
-  <div class="container hero">
-    <div class="hero__description">
+<section class="section hero">
+  <div class="container hero__container">
+    <div class="hero__left">
       <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
       <p class="hero__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Suspendisse
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-      <button class="button--hero" type="button"hero-modal-open>Order Now</button>
-    </div>
- 
-     
-     
 
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-    <div class="hero__slider  ">
-     
-      <div class="swiper-wrapper">
-        
-        <div class="swiper-slide">
-          <img
-            class="hero__picture"
-            src="./images/desktop/hero/lunch-desktop-1-min.png"
-            alt="Crocets"
-            width="292"
-            height="292"
-          />
+      <button class="button button--accent" type="button"hero-modal-open>Order Now</button>
+    </div>
+
+
+    <div class="hero__slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hero/crocets-desk@1x.png 1x,
+                  ./images/hero/crocets-desk@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero/crocets-tab@1x.png 1x,
+                  ./images/hero/crocets-tab@2x.png 2x
+                "
+              />
+              <img
+                class="hero__picture"
+                src="./images/hero/crocets-tab@1x.png"
+                alt="Crocets"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hero/salat-desk@1x.png 1x,
+                  ./images/hero/salat-desk@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero/salat-tab@1x.png 1x,
+                  ./images/hero/salat-tab@2x.png 2x
+                "
+              />
+              <img
+                class="hero__picture"
+                src="./images/hero/salat-tab@1x.png"
+                alt="Crocets"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hero/eggs-desk@1x.png 1x,
+                  ./images/hero/eggs-desk@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero/eggs-tab@1x.png 1x,
+                  ./images/hero/eggs-tab@2x.png 2x
+                "
+              />
+              <img
+                class="hero__picture"
+                src="./images/hero/eggs-tab@1x.png"
+                alt="Crocets"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
         </div>
-        <div class="swiper-slide">
-          <img
-            class="hero__picture"
-            src="./images/desktop/hero/breakfast-desktop-1-min.png"
-            alt="Crocets"
-            width=""
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            class="hero__picture"
-            src="./images/desktop/hero/dinner-desktop-1-min.png"
-            alt="Crocets"
-            width=""
-          />
-        </div>
-      
       </div>
-    <div class="swiper-button-next icon__color"></div>
-      <div class="swiper-button-prev icon__color"></div>
-      
+      <button class="swiper-button-next" type="button"></button>
+      <button class="swiper-button-prev" type="button"></button>
     </div>
-    </div>
-
-  </div> 
+  </div>
 </section>
 

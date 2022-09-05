@@ -84,6 +84,16 @@
   }
 }
 
+.footer__form-subscribe {
+  @include tablet {
+    column-gap: 0px;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+
 .footer__subscribe-title {
   font-weight: 500;
   font-size: 14px;
@@ -99,6 +109,9 @@
     display: flex;
     margin-bottom: 0;
   }
+
+  @include desktop {
+  }
 }
 
 .footer__label {
@@ -106,6 +119,9 @@
 
   @include tablet {
     margin-bottom: 0;
+  }
+
+  @include desktop {
   }
 }
 
@@ -123,7 +139,7 @@
   line-height: 1.2;
 }
 
-.footer__subscribe__link {
+.footer__subscribe-link {
   text-decoration-line: underline;
   color: $dark-green;
 }

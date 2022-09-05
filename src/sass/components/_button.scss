@@ -28,17 +28,11 @@
     &--follow{
         max-width: 103px;
         padding: 11px 22px;
+
     }
 }
-.button--modal:visited + .modal__errorr{
-    background-color: #fff;
-    width: 10px;
-    height: 20px;
-    display: flex;
+
+
+
 }
-.modal__checkbox{
-    border: 2px solid red;
-    &:hover + .modal__input:not(:focus):invalid {
-        border: 2px solid black;
-    }
-}
+
