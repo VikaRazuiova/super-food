@@ -1,42 +1,21 @@
 
 .offerings {
     padding-top: 46px;
-    // background-image: url(../images/mobile/offers/bg-offers-480-1-min.png);
-
-    // @include retina {
-    //     background-image: url(../images/mobile/offers/bg-offers-480-2-min.png);
-    // }
-
-    // background-size: cover;
-    // background-position: top;
-    // background-repeat: no-repeat;
-    // line-height: 1.2;
-
-    // @include tablet {
-    //     padding-top: 21px;
-    //     background-image: url(../images/tablet/offers/bg-offers-tablet-1-min.png);
-
-    //     @include retina {
-    //         background-image: url(../images/tablet/offers/bg-offers-tablet-2-min.png);
-    //     }
-    // }
-
-    // @include desktop {
-    //     padding-top: 177px;
-    //     background-image: url(../images/desktop/offers/bg-offers-desktop-1-min.png);
-
-    //     @include retina {
-    //         background-image: url(../images/desktop/offers/bg-offers-desktop-2-min.png);
-    //     }
-
-
+    @include tablet{
+        padding-top: 36px;
+    }
+    @include desktop{
+        padding-top: 7px;
+        padding-bottom: 100px;
+    }
+   
     & .container {
         display: flex;
         flex-direction: column;
 
         @include desktop {
             flex-direction: row;
-            align-items: center;
+            align-items: flex-end;
         }
     }
 
@@ -252,7 +231,7 @@
         justify-content: space-between;
         gap: 3px;
         padding: 5px 0 0;
-        width: 83px;
+        width: auto;
         height: 34px;
         background-color: inherit;
         color: #000000;
