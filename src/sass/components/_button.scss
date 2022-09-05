@@ -11,6 +11,13 @@
   text-align: center;
   color: #2c2c2c;
   display: inline;
+    &--accent{
+        transition: 250ms background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+       &:hover{
+        background-color: $accent-button-green;
+       }
+    }
+
     &--modal{
        margin: 0 auto;
        background-color: #ffffff;
@@ -21,6 +28,10 @@
        display: none;
        min-width: 102px;
        flex-direction: row;
+       transition: 250ms background-color cubic-bezier(0.075, 0.82, 0.165, 1);
+       &:hover{
+        background-color: $accent-button-green;
+       }
         @include tablet{
             display: block;
             
@@ -30,6 +41,17 @@
         max-width: 103px;
         padding: 11px 22px;
 
+    }
+    &--subscrible{
+    display: flex;
+        background-color: $button-green;
+        justify-content: center;
+        align-items: center;
+        max-height: 42px;
+        min-width: 103px;
+        &:hover{
+            background-color: $accent-button-green;
+        }
     }
 }
 
