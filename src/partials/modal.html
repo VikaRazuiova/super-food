@@ -1,11 +1,9 @@
-<button data-modal-open> qwewqee </button>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal__button" type="button" data-modal-close>
-            <svg width="20px" height="20px">
-                <use href="#">
-                    </use>
-                </svg>
+            <svg class="header__button-close-icon" width="24" height="24">
+                <use href="./images/svg/sprite.svg#icon-close"></use>
+            </svg>
             </button>
        
         <p class="modal__title">Order From</p>
@@ -23,7 +21,11 @@
                 <div class="modal__error">
                     <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
                     <p class="modal__error-text">The name must be between 3 and 25 characters</p>
-                </div>  
+                </div> 
+                <div class="modal__errorr">
+                    <div class="modal__img-errorr"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
+                    <p class="modal__errorr-text">This field is required</p>
+                </div> 
                 </div>  
             <label class="modal__label" for="phone">Phone number</label> 
                 <div class="modal__position">
@@ -39,6 +41,10 @@
                         <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
                         <p class="modal__error-text">This phone must be in the format  099 000 00 00</p>
                     </div>
+                    <div class="modal__errorr">
+                        <div class="modal__img-errorr"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
+                        <p class="modal__errorr-text">This field is required</p>
+                    </div>
                   
                 </div>
             <label class="modal__label" for="email">E-mail</label>
@@ -53,16 +59,13 @@
                     <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
                     <p class="modal__error-text">Please enter a valid email address</p>
                 </div>
+                <div class="modal__errorr">
+                    <div class="modal__img-errorr"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
+                    <p class="modal__errorr-text">This field is required</p>
+                </div>
             </div>
-            
-           <!-- <div class="modal__position">
-            <div class="modal__errorr">
-                <div class="modal__img-error"><img src="./images/svg/error-modal.svg" alt="error" width="12" height="12"></div>
-                <p class="modal__error-text">This phone must be in the format  099 000 00 00</p>
-            </div>
-           </div> -->
            <button class="button button--modal" type="submit">Send</button>
         </form>
        
     </div>
-</div>
+</div> 

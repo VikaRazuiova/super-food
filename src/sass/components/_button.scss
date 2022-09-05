@@ -14,20 +14,10 @@
   display: inline;
   display: flex;
     &--modal{
+        margin: 0 auto;
        padding: 10px 38px;
-       border-color: $dark-green ;
-       border: 1px solid;
-        // &:active + .modal__input:not(:required) {
-        //   border: 2px solid red;
-        //   display: flex;
-        // }
-        // &:active + .modal__errorr{
-        //   display: flex;
-        // }
-        // &:hover + .modal__input:not(:focus):invalid {
-        //   border: 5px solid blue;
-        // }
-
+       border-color: 1px solid $dark-green;
+      
     }
      &__header--tablet{
        display: none;
@@ -45,4 +35,10 @@
     width: 10px;
     height: 20px;
     display: flex;
+}
+.modal__checkbox{
+    border: 2px solid red;
+    &:hover + .modal__input:not(:focus):invalid {
+        border: 2px solid black;
+    }
 }

@@ -9,16 +9,44 @@
     background-color: $yellow-main;
     text-align: center;
     z-index: 2;
+    @include mobile{
+        max-width: 458px;
+    }
     &__button{
         position: absolute;
         top: 16px;
         right: 16px;
         padding: 0%;
+        background-color: #ffff;
+        border-radius: 50%;
+        border-color: transparent;
+        width: 32px ;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     &__form{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        &:invalid{
+            .button--modal{
+            border: 2px solid red;
+            background-color: #ffff;
+            }
+            .modal__input{
+                border: 1px solid rgba(255, 112, 93, 1);
+            }
+            .modal__errorr{
+                display: flex;
+            }
+        
+           
+            
+
+        }
     }
     &__title{
         margin-top: 0%;
@@ -67,43 +95,14 @@
             border-color:$dark-green;
             outline: none;
           }
-          &:not(:focus):not(:placeholder-shown):valid {
+        &:not(:focus):not(:placeholder-shown):valid {
             border-color: $dark-green;
           }
-          &:not(:focus):not(:placeholder-shown):invalid {
+        &:not(:focus):not(:placeholder-shown):invalid {
             border: 1px solid rgba(255, 112, 93, 1);
-          }
-        //   &:not(:required):invalid {
-        //     border: 3px solid blue;
-        //   }
-
-
-
-        //   &:not(:focus):invalid {
-        //     border: 2px solid blue;
-        // }
-        // &:not(:focus):invalid + .modal__errorr{
-        //     display: flex;
-        // }
-
-
-
-        // &:not(:required):invalid {
-        //     border: 5px solid blue;
-        // }
-        // &:required:invalid + .button--modal:active{
-        //     border: 5px solid blue;
-        // }
-        // .button--modal:active + &{
-        //     border: 5px solid blue;
-        // }
-        & + .button--modal:active{
-            background-color: blue;
         }
-         
     }
-   
-    
+
    
     &__error{
         position: absolute;
@@ -128,24 +127,25 @@
         width: 11px;
         height: 11px;
     }
+    
     &__errorr{
         position: absolute;
         display: flex;
         align-items: baseline;
         font-weight: 500;
-        font-size: 111px;
+        font-size: 11px;
         line-height: 1.4;
         color: rgba(255, 112, 93, 1);
         padding-left: 12px;
         gap: 4px;
         display: none;
-    //   .button--modal:active + &{
-    //         display: flex;
-    //     }
-    // .modal__input:not(:focus):not(:placeholder-shown):invalid + & {
-    //     display: flex;
-    //   }
-
+    }
+    &__errorr-text{
+        margin: 0%;
+    }
+    &__img-errorr{
+        width: 11px;
+        height: 11px;
     }
 
 }
