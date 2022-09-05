@@ -1,0 +1,2 @@
+!function(){var e={openMenuBtn:document.querySelector(".header__button"),closeMenuBtn:document.querySelector(".header__button-close"),menu:document.querySelector(".header__nav"),body:document.querySelector("body"),menuList:document.querySelector(".navigation__list")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n),e.menuList.addEventListener("click",(function(){e.menu.classList.add("is-hidden")}))}();
+//# sourceMappingURL=index.a5c23c73.js.map
