@@ -1,7 +1,7 @@
 body {
   font-family: $main-font;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.2;
   color: $primary-text-color;
 
   background-color: $background-color;
@@ -53,7 +53,7 @@ button {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 28px;
-  line-height: 1.2;
+  line-height: 1.17;
 
   @include tablet {
     font-size: 42px;
@@ -63,7 +63,7 @@ button {
 
 .after-title {
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.17;
 
   @include tablet {
     font-size: 16px;
