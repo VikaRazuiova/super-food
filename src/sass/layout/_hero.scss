@@ -68,6 +68,7 @@
   &:hover,
   &:focus {
     border: 14px solid $button-green;
+    
   }
 
   @include desktop {
@@ -77,9 +78,11 @@
     top: 0;
     right: 0;
     border: 26px solid $yellow-main;
+    transition: 250ms;
     &:hover,
     &:focus {
       border: 26px solid $button-green;
+      
     }
   }
 
@@ -123,8 +126,19 @@
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: -25px;
+  @include desktop {
+    right: -40px;
+  }
+  transition: 250ms;
+}
+
+
+.swiper-button-next:hover,
+.swiper-rtl .swiper-button-prev:hover {
+ color: #7EB101;
 
 }
+
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
@@ -132,5 +146,10 @@
   @include desktop {
     left: -40px;
   }
+  transition: 250ms;
 }
 
+.swiper-button-prev:hover,
+.swiper-rtl .swiper-button-next:hover {
+ color: #7EB101;
+}
