@@ -44,6 +44,7 @@
     font-size: 16px;
   }
 
+
   @include desktop {
     max-width: 503px;
   }
@@ -60,6 +61,7 @@
   width: 320px;
   height: 320px;
   border-radius: 50%;
+
   border: 14px solid $yellow-main;
 
   &:hover,
@@ -79,6 +81,7 @@
       border: 26px solid $button-green;
     }
   }
+
 }
 
 .swiper {
@@ -120,9 +123,6 @@
 .swiper-rtl .swiper-button-prev {
   right: -25px;
 
-  @include desktop {
-    right: -40px;
-  }
 }
 
 .swiper-button-prev,
@@ -132,3 +132,4 @@
     left: -40px;
   }
 }
+
