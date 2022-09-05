@@ -1,0 +1,71 @@
+.wrap{
+    background-size: 100% 1050px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/320/offers/offers-mobile-320-1-min.png);
+    
+    @include retina {
+            background-image: url(../images/320/offers/offers-mobile-320-2-min.png);
+        }
+    
+    @include mobile {
+            background-image: url(../images/mobile/offers/bg-offers-480-1-min.png);
+    
+    @include retina {
+                background-image: url(../images/mobile/offers/bg-offers-480-2-min.png);
+            }
+        }        
+    @include tablet {
+        background-size: 100% 1140px;
+                // padding-top: 21px;
+                background-image: url(../images/tablet/offers/bg-offers-tablet-1-min.png);
+        
+    @include retina {
+                    background-image: url(../images/tablet/offers/bg-offers-tablet-2-min.png);
+                }
+            }
+        
+    @include desktop {
+        background-size: 100% 824px;
+                // padding-top: 177px;
+                background-image: url(../images/desktop/offers/bg-offers-desktop-1-min.png);
+        
+    @include retina {
+                    background-image: url(../images/desktop/offers/bg-offers-desktop-2-min.png);
+                }
+            }
+}
+
+
+
+.wrap--mod{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 769px;
+    background-image: url(../images/320/customers/customers-mobile-320-1-min.png);
+    @include retina {
+        background-image: url(../images/320/customers/customers-mobile-320-2-min.png);
+    }
+    @include mobile {
+        background-image: url(../images/mobile/customers/bg-customers-480-1-min.png);
+        @include retina{
+            background-image: url(../images/mobile/customers/bg-customers-480-2x-min.png);
+        }
+    }
+    @include tablet {
+        background-size: 100% 554px;
+        background-image: url(../images/tablet/customers/bg-customers-tablet-1-min.png);
+        @include retina {
+                background-image: url(../images/tablet/customers/bg-customers-tablet-2-min.png);
+            }
+    }
+    @include desktop {
+        background-size: 100% 647px;
+        background-image: url(../images/desktop/customers/bg-customers-desktop-1-min.png);
+        @include retina{
+            background-image: url(../images/desktop/customers/bg-customers-desktop-2-min.png);
+        }
+
+    } 
+    
+}

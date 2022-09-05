@@ -1,11 +1,15 @@
 .customers{
     max-width: 100%;
 }
+
+.customers .after-title{
+    margin-bottom: 32px;
+}
 .coustumers__boxes{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
     @include tablet {
         flex-direction: row;
     }
@@ -33,7 +37,6 @@
     border-bottom-right-radius: 28px;
     border-bottom-left-radius: 28px;
     padding: 8px;
-    margin-top: 32px;
     @include tablet{
         width: 336px;
         padding: 12px;
