@@ -11,6 +11,11 @@
         @include tablet {
             justify-content: flex-end;
         }
+                & img {
+                    animation-name: changeLogoPosition;
+                    animation-duration: 7500ms;
+                    animation-iteration-count: infinite;
+                }
     }
     &__elements{
         @include tablet{

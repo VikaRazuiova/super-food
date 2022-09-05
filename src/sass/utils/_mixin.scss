@@ -81,6 +81,16 @@
     transform: none;
   }
 }
+
+@keyframes changeLogoPosition {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 // @keyframes changeBananaPosition{
 //       0% {
 //         transform: rotate(-15deg);
