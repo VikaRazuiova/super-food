@@ -3,6 +3,8 @@ body {
   font-size: 14px;
   line-height: 1.2;
   color: $primary-text-color;
+ 
+  scroll-behavior: smooth;
 
   background-color: $background-color;
 }
