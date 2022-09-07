@@ -31,6 +31,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    &__form--submit-attempted{
         &:valid{
             .button--modal{
                 border: 2px solid $dark-green;
@@ -38,26 +40,23 @@
                 } 
         }
         &:invalid{
-            .button--modal{
-            border: 2px solid rgba(255, 112, 93, 1);
-            background-color: #ffff;
-            }
-            .modal__input{
-                border: 1px solid rgba(255, 112, 93, 1);
-            }
-            .modal__errorr{
-                display: flex;
-            }
-        & .modal__input:focus{
-            .modal__errorr{
-                display: none;
+                .button--modal{
+                border: 2px solid rgba(255, 112, 93, 1);
+                background-color: #ffff;
+                }
+                .modal__input{
+                    border: 1px solid rgba(255, 112, 93, 1);
+                }
+                .modal__errorr{
+                    display: flex;
+                }
+            & .modal__input:focus{
+                .modal__errorr{
+                    display: none;
+                }
             }
         }
-        
-        
-            
-
-        }
+       
     }
     &__title{
         margin-top: 0%;
@@ -162,3 +161,12 @@
     }
 
 }
+// input.required:invalid {
+//     color: red;
+// }
+// .submit-attempt input:invalid, .submit-attempt select:invalid {
+//     border: 1px solid red;
+// }
+// input:required:focus:invalid {
+//     border: 5px solid green;
+//    }
