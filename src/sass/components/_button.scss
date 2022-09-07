@@ -22,7 +22,8 @@
        margin: 0 auto;
        background-color: #ffffff;
        padding: 10px 38px;
-       border-color: 1px solid $dark-green;
+       border: 1px solid;
+       border-color: $dark-green;
     }
      &__header--tablet{
        display: none;
